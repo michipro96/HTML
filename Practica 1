@@ -1,0 +1,12 @@
+<form action="">
+  <label for="email">Email Address:</label>
+
+  <input required type="email" name="email" id="email" placeholder="example@email.com" minlength="4" maxlength="64" />
+
+  <input readonly type="email" name="email2" id="email2" value="example@email.com" />
+
+  <input disabled type="email" name="email3" id="email3" value="example@email.com" />
+
+  <button type="reset">Reset form</button>
+  <button type="submit">Submit form</button>
+</form>
