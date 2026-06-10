@@ -6,37 +6,35 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body style="background-image: url('img/fondo.jpg'); background-size: cover; margin:0;">
+<body>
 
-<!-- BARRA SUPERIOR -->
-<header style="display:flex; justify-content:space-between; padding:10px; background:white;">
+<!-- TOP BAR -->
+<header class="topbar">
 
   <!-- IZQUIERDA -->
-  <img src="img/icono_home.jpg" width="40">
+  <div class="left">
+    <img src="img/icono_home.jpg" class="icon">
+  </div>
 
   <!-- CENTRO -->
-  <img src="img/barra_de_busqueda.jpg" width="200">
+  <div class="center">
+    <img src="img/barra_de_busqueda.jpg" class="search">
+    <img src="img/pasteles_en_venta.jpg" class="menu">
+  </div>
 
   <!-- DERECHA -->
-  <div>
-    <img src="img/carrito.jpg" width="40">
-    <img src="img/iniciar_sesion.jpg" width="40">
+  <div class="right">
+    <img src="img/carrito.jpg" class="icon">
+    <img src="img/iniciar_sesion.jpg" class="icon">
+    <img src="img/contacto.jpg" class="icon">
   </div>
 
 </header>
 
-<!-- CONTENIDO -->
-<h1 style="text-align:center;">🍰 Pastelería Dulce Vida</h1>
-
-<img src="img/pasteles_en_venta.jpg" style="display:block; margin:auto; width:60%;">
-
-<!-- CONTACTO -->
-<div style="position:fixed; bottom:10px; left:10px; background:white; padding:10px;">
-  <img src="img/contacto.jpg" width="50">
-  <p>+34 623 44 77 36</p>
-  <p>velascoleire2010@gmail.com</p>
-  <p>Barcelona</p>
-</div>
+<!-- HERO -->
+<section class="hero">
+  <img src="img/fondo.jpg" class="hero-img">
+</section>
 
 </body>
 </html>
