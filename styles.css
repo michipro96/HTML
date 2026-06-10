@@ -1,6 +1,26 @@
 body {
   margin: 0;
   font-family: Arial;
+  overflow-x: hidden;
+}
+
+/* FONDO FULL SCREEN */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+/* CONTENIDO ENCIMA */
+.content {
+  position: relative;
+  z-index: 1;
 }
 
 /* TOP BAR */
@@ -8,44 +28,75 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background: white;
-  position: sticky;
-  top: 0;
+  padding: 15px;
+  background: rgba(255,255,255,0.8);
 }
 
-/* IZQ CENTRO DERECHA */
-.left, .center, .right {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* ICONOS PEQUEÑOS */
+/* ICONOS GRANDES AHORA */
 .icon {
-  width: 35px;
-  height: 35px;
+  width: 55px;
+  height: 55px;
   object-fit: contain;
   cursor: pointer;
 }
 
+/* CENTRO */
+.center {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 /* BUSCADOR */
 .search {
-  width: 200px;
-  height: 35px;
+  width: 250px;
+  height: 45px;
   object-fit: cover;
 }
 
-/* MENU PRODUCTOS */
+/* MENU */
 .menu {
-  width: 120px;
-  height: 35px;
+  width: 160px;
+  height: 45px;
   object-fit: cover;
 }
 
-/* HERO IMAGEN GRANDE */
-.hero-img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
+/* TÍTULO */
+.title {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  margin-top: 20px;
+}
+
+/* IMAGEN PRINCIPAL */
+.main-img {
+  display: block;
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 20px;
+}
+
+/* HOME ABAJO */
+.bottom-img {
+  display: block;
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 20px;
+}
+
+/* CONTACTO ABAJO IZQUIERDA */
+.phone {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.phone-icon {
+  width: 50px;
+  height: 50px;
 }
