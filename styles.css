@@ -1,12 +1,51 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: #fff0f5;
-  text-align: center;
 }
 
-header {
-  background: #ff7aa2;
-  color: white;
-  padding: 20px;
+/* TOP BAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  position: sticky;
+  top: 0;
+}
+
+/* IZQ CENTRO DERECHA */
+.left, .center, .right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ICONOS PEQUEÑOS */
+.icon {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* BUSCADOR */
+.search {
+  width: 200px;
+  height: 35px;
+  object-fit: cover;
+}
+
+/* MENU PRODUCTOS */
+.menu {
+  width: 120px;
+  height: 35px;
+  object-fit: cover;
+}
+
+/* HERO IMAGEN GRANDE */
+.hero-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
